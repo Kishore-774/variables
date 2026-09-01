@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript Scope</title>
+</head>
+<body>
+
+    <h2>JavaScript var, let and const Scope</h2>
+
+    <script>
+        // Global scope
+        var Var = "outside the block";
+        let Let = "outside the block";
+        const Const = "outside the block";
+
+ console.log(Var);
+ console.log(Let);
+ console.log(Const);
+        // Block scope
+        {
+            var var1 = "inside the block";
+            let let1 = "inside the block";
+            const const1 = "inside the block";
+            console.log(var1);
+            console.log(let1);
+            console.log(const1);
+        }
+        console.log(var1);
+        
+        function scope(){  //function scope
+            let functionscope="function Scope"
+        }
+        functionscope()
+        console.log(functionscope);  //this is not print
+    </script>
+</body>
+</html>
